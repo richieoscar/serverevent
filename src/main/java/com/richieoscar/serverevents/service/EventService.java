@@ -8,5 +8,7 @@ public interface EventService {
 
     SseEmitter subscribe(SubscribeRequest request);
 
-    Void dispatchEvent(DispatcRequest dispatcRequest);
+    void dispatchEvent(DispatcRequest dispatcRequest);
+
+    SseEmitter generalSubscription();
 }
